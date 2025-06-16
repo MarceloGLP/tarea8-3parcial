@@ -1,0 +1,118 @@
+.acordeon {
+    width: 100%;
+    padding: 25px;
+    background-color: #a5bad6;
+    border-radius: 40px;
+}
+.contenido3{
+    align-items: center;
+    padding: 25px;
+    background: white;
+    display: flex ;
+    flex-direction: row;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: inset -1px 1px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+details {
+    p {
+        grid-area: p;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        font-size: 18px;
+    }
+}
+.aco1{
+    background: #834052;
+}
+.aco2{
+    background: #8c95b0;
+}
+.aco3{
+    background: #a5bad6;
+}
+.aco4{
+    background: #382538;
+}
+.aco5{
+    background: #af848c;
+}
+
+details[open] .aco1 {
+    position: relative;
+    bottom: -20px;
+    top: 10px;
+    margin-bottom: 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+details[open] .aco2 {
+    position: relative;
+    bottom: -20px;
+    top: 10px;
+    margin-bottom: 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+details[open] .aco3 {
+    position: relative;
+    bottom: -20px;
+    top: 10px;
+    margin-bottom: 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+details[open] .aco4 {
+    position: relative;
+    bottom: -20px;
+    top: 10px;
+    margin-bottom: 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+details[open] .aco5 {
+    position: relative;
+    bottom: -20px;
+    margin-bottom: 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+details[open] summary~* {
+    animation: open 0, 8s ease;
+}
+
+@keyframes open {
+    0% {
+        opacity: 0;
+        margin-left: -15px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+summary {
+    box-shadow: inset -1px 1px 20px rgba(255, 255, 255, 0.5);
+    position: relative;
+    top: -10px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: #834052;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+
+}
